@@ -1,4 +1,4 @@
-ans = []  # List to store all the unique palindromes of the given string
+ans = []                   # List to store all the unique palindromes of the given string
 
 
 def checkPalindrome(arr):  # Function to check if the passed string is palindrome or not
@@ -17,9 +17,9 @@ def checkPalindrome(arr):  # Function to check if the passed string is palindrom
 
 
 def GetSubString(arr):  # Function to generate all substrings possible from given string and
-    i = 0  # To check each and every substring that if it is palindrome or not
-    # if palindrome then storing it in the ans list if it is not present in the list already
-    # global ans
+    i = 0               # To check each and every substring that if it is palindrome or not
+                        # if palindrome then storing it in the ans list if it is not present in the list already
+                        # global ans
 
     while i < len(arr):
         j = i
@@ -32,7 +32,8 @@ def GetSubString(arr):  # Function to generate all substrings possible from give
         i = i + 1
 
 
-arr = "Jitendra"
+#Driver Program
+arr = "TENET"
 
 # calling GetSubString() function to store all unique palindrome possible from given string
 GetSubString(arr)
