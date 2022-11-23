@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+bool isPrime(int n)
+{
+    if(n <= 1) return false;
+    for(int i =2; i<n-1;i++)
+    {
+        int e = pow(i,n-1);
+        if(e %n != 1)
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+int main()
+{
+
+    int n = 23;
+    if(isPrime(n))
+    {
+        cout<<"True"<<endl;
+    }
+    else
+    {
+        cout<<"False"<<endl;
+    }
+    return 0;
+}
